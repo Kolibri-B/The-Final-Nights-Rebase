@@ -31,7 +31,7 @@
 	if(stat_morality_childe)
 		stat_morality_childe.morality_path = new /datum/morality/humanity(childe) // set morality to path of humanity
 
-		var/datum/splat/vampire/kindred/kindred_splat = iskindred(childe) // if this is null something has gone seriously wrong
+		var/datum/splat/vampire/kindred/kindred_splat = get_kindred_splat(childe) // if this is null something has gone seriously wrong
 
 		// update morality score and the splat enlightenment
 		if(istype(kindred_splat))
