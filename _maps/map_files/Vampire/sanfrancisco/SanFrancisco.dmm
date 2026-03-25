@@ -24116,7 +24116,6 @@
 "gws" = (
 /obj/effect/decal/cleanable/trash,
 /obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/glowshroom,
 /turf/open/misc/dirt,
 /area/vtm/interior/sewer)
 "gww" = (
@@ -32319,7 +32318,6 @@
 /obj/structure/flora/bush/sparsegrass/style_random{
 	pixel_y = 12
 	},
-/obj/structure/glowshroom,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
 "iDT" = (
@@ -80835,12 +80833,6 @@
 /obj/machinery/light/red/directional/north,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/millennium_tower/f3)
-"vDz" = (
-/obj/structure/glowshroom,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone8"
-	},
-/area/vtm/interior/sewer)
 "vDJ" = (
 /obj/structure/chair/comfy/darkpack/dark{
 	dir = 8
@@ -103111,7 +103103,7 @@ xyw
 rqY
 cBs
 cBs
-vDz
+rqY
 xyw
 mkX
 tZl
