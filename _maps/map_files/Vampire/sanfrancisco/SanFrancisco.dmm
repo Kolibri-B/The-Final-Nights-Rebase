@@ -7601,8 +7601,7 @@
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/apartment/pacific)
 "bZP" = (
-/obj/structure/table/countertop,
-/obj/structure/sink/basin/directional/west,
+/obj/machinery/griddle,
 /turf/open/floor/city/industrial/large,
 /area/vtm/interior/apartment/pacific)
 "cab" = (
@@ -13288,6 +13287,9 @@
 /obj/structure/bed/maint{
 	pixel_y = 2
 	},
+/obj/effect/decal/wallpaper/papers/random{
+	pixel_y = 27
+	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/pacificheights/industrial)
 "dAL" = (
@@ -14416,7 +14418,7 @@
 /obj/effect/turf_decal/siding/beige{
 	dir = 1
 	},
-/obj/machinery/griddle,
+/obj/machinery/oven/range,
 /turf/open/floor/city/industrial/large,
 /area/vtm/interior/apartment/pacific)
 "dQs" = (
@@ -20338,6 +20340,10 @@
 	},
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior)
+"ftb" = (
+/obj/effect/decal/graffiti,
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/pacificheights)
 "fte" = (
 /obj/structure/railing{
 	dir = 1
@@ -23043,6 +23049,10 @@
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/interior/shop)
+"gfA" = (
+/obj/effect/decal/graffiti,
+/turf/open/floor/plating/asphalt,
+/area/vtm/outside/pacificheights/industrial)
 "gfG" = (
 /obj/structure/filingcabinet{
 	pixel_x = -6
@@ -41762,6 +41772,13 @@
 	color = "#bfbfbf"
 	},
 /area/vtm/interior/endron_facility)
+"lfU" = (
+/obj/effect/turf_decal/asphaltline/alt{
+	pixel_x = -14
+	},
+/obj/effect/decal/graffiti/large,
+/turf/open/floor/plating/asphalt,
+/area/vtm/outside/pacificheights/industrial)
 "lfV" = (
 /obj/effect/turf_decal/asphaltline/alt{
 	dir = 8
@@ -47138,6 +47155,7 @@
 /area/vtm/outside/pacificheights/forest)
 "mCo" = (
 /obj/structure/table/countertop,
+/obj/structure/sink/basin/directional/east,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment/pacific)
 "mCr" = (
@@ -54506,11 +54524,6 @@
 /obj/effect/turf_decal/bordur,
 /turf/open/misc/grass/nosmooth,
 /area/vtm/outside/pacificheights/community)
-"orK" = (
-/obj/structure/table/wood,
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior)
 "orU" = (
 /obj/structure/railing{
 	dir = 8
@@ -56080,6 +56093,13 @@
 /obj/effect/mapping_helpers/door/lock_difficulty/four,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/clinic)
+"oNH" = (
+/obj/effect/decal/wallpaper/stone/low{
+	pixel_y = 24
+	},
+/obj/effect/decal/graffiti/large,
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/pacificheights/industrial)
 "oNL" = (
 /obj/structure/flora/bush/sparsegrass/style_random,
 /obj/transfer_point_vamp/umbral/exit{
@@ -60094,6 +60114,7 @@
 "pQK" = (
 /obj/structure/table/countertop/black,
 /obj/machinery/microwave,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior)
 "pQL" = (
@@ -66697,6 +66718,10 @@
 	},
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/clinic)
+"rCN" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/openspace,
+/area/vtm/interior/apartment/pacific)
 "rCZ" = (
 /obj/machinery/light/dim/directional/west,
 /obj/structure/chair/comfy/darkpack/green{
@@ -78474,10 +78499,7 @@
 /area/vtm/interior/theatre)
 "uNC" = (
 /obj/structure/table/countertop,
-/obj/machinery/microwave{
-	desc = "Cooks and boils stuff, somehow.";
-	pixel_y = 8
-	},
+/obj/machinery/microwave,
 /turf/open/floor/city/industrial/large,
 /area/vtm/interior/apartment/pacific)
 "uNH" = (
@@ -87338,6 +87360,10 @@
 	},
 /turf/open/floor/city/factory,
 /area/vtm/interior/giovanni/basement)
+"xiM" = (
+/obj/effect/decal/graffiti,
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/supply)
 "xiN" = (
 /obj/structure/table,
 /obj/item/paper_bin{
@@ -88736,6 +88762,11 @@
 /obj/effect/mapping_helpers/door/lock_difficulty/four,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/vjanitor)
+"xFy" = (
+/obj/effect/landmark/npcbeacon,
+/obj/effect/decal/graffiti/large,
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/pacificheights/industrial)
 "xFF" = (
 /obj/item/kitchen/spoon{
 	pixel_y = 16;
@@ -90132,6 +90163,13 @@
 /obj/structure/table/wood/fancy,
 /turf/open/floor/carpet/red,
 /area/vtm/interior/laundromat)
+"xZh" = (
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/decal/wallpaper/papers/random{
+	pixel_y = 27
+	},
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/apartment/pacific)
 "xZo" = (
 /obj/structure/hedge,
 /obj/effect/turf_decal/bordur/corner{
@@ -133528,7 +133566,7 @@ nMx
 vcn
 mWi
 goA
-ruB
+oNH
 hdQ
 uDw
 vGb
@@ -143308,7 +143346,7 @@ dJG
 eGn
 iuv
 bef
-tao
+uTI
 tao
 hRV
 lgL
@@ -143320,7 +143358,7 @@ eEz
 eEz
 ajg
 hRV
-tao
+uTI
 hdQ
 uDw
 vGb
@@ -144154,7 +144192,7 @@ azZ
 azZ
 azZ
 oYt
-tNl
+xiM
 tNl
 tNl
 oYt
@@ -144311,7 +144349,7 @@ aHy
 sNe
 ykL
 dbc
-tao
+xXP
 pQW
 uDw
 vGb
@@ -144749,7 +144787,7 @@ qrc
 kHB
 gXN
 tao
-hdQ
+pQW
 uDw
 vGb
 uDw
@@ -144938,7 +144976,7 @@ hvo
 iJs
 iJs
 dAL
-yii
+xZh
 bwe
 nzf
 gEJ
@@ -145142,7 +145180,7 @@ fPt
 wnQ
 dAL
 dAL
-yii
+xZh
 bwe
 nzf
 gEJ
@@ -145173,7 +145211,7 @@ tND
 vaC
 bqE
 ajj
-uDw
+gfA
 uDw
 uDw
 uDw
@@ -145768,7 +145806,7 @@ dQu
 tur
 bjd
 dAL
-tML
+xFy
 wKS
 uDw
 vGb
@@ -145989,7 +146027,7 @@ xnA
 eWf
 bqE
 ajj
-wnh
+lfU
 wnh
 wnh
 uDw
@@ -148397,7 +148435,7 @@ oQL
 oQL
 oQL
 oQL
-pUu
+ftb
 lLR
 vVs
 lbR
@@ -148648,7 +148686,7 @@ tND
 vaC
 eWf
 ajj
-tao
+uTI
 tao
 tao
 tao
@@ -183287,7 +183325,7 @@ peF
 pQK
 iDd
 dgO
-orK
+vLp
 qbm
 baE
 raQ
@@ -183698,7 +183736,7 @@ baE
 baE
 baE
 baE
-baE
+rEl
 pZu
 rgF
 thu
@@ -186762,7 +186800,7 @@ dAL
 ngc
 hca
 mgm
-mgm
+rCN
 vZp
 iJs
 ehq
