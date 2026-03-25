@@ -45335,10 +45335,7 @@
 /area/vtm/interior/library)
 "meN" = (
 /obj/effect/turf_decal/siding/wideplating/dark/corner,
-/obj/machinery/vending/cola/blue{
-	pixel_y = 24;
-	density = 0
-	},
+/obj/fusebox,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment/pacific)
 "meQ" = (
@@ -198622,7 +198619,7 @@ hAD
 iTm
 bjD
 lIE
-oJK
+qxS
 bjD
 lIE
 vIJ
@@ -240034,7 +240031,7 @@ wZS
 omk
 oqk
 lIE
-oJK
+qxS
 qxS
 qxS
 rLl
