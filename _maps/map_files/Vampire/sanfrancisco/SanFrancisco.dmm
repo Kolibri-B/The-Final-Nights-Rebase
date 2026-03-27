@@ -29128,13 +29128,13 @@
 /turf/open/floor/city/gummaguts,
 /area/vtm/interior/shop)
 "hMY" = (
-/obj/effect/turf_decal/bordur{
-	dir = 8
-	},
 /obj/structure/railing{
 	dir = 9
 	},
 /obj/item/kirbyplants/darkpack/random,
+/obj/effect/turf_decal/bordur{
+	dir = 8
+	},
 /turf/open/floor/plating/sidewalkalt,
 /area/vtm/outside/pacificheights)
 "hNk" = (
