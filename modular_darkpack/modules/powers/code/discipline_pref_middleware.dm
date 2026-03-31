@@ -1,15 +1,16 @@
 //discipline stuff
 GLOBAL_LIST_INIT(rare_discipline_types, list(
 	/datum/discipline/quietus,
+	/datum/discipline/vicissitude,
 	/datum/discipline/temporis,
 	/datum/discipline/serpentis,
 	/datum/discipline/dementation,
+	/datum/discipline/daimoinon,
 	/datum/discipline/obtenebration,
 	/datum/discipline/thaumaturgy,
 	/datum/discipline/necromancy,
 	/datum/discipline/valeren,
 	/datum/discipline/obeah,
-	/datum/discipline/daimoinon,
 	/datum/discipline/melpominee,
 ))
 
