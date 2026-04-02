@@ -42,7 +42,7 @@
 	layer = SPACEVINE_LAYER // Cant even with flav bro - Fallcon
 	pixel_w = -32
 	anchored = TRUE
-	density = TRUE
+	density = FALSE
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF | FREEZE_PROOF
 	pass_flags_self = PASSMACHINE
 	var/number_of_lamps
