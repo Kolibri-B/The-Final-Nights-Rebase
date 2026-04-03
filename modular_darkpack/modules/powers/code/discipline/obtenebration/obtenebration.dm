@@ -345,17 +345,15 @@
 	var/select = tgui_input_list(tentacle_owner, "Select tentacle behaviour", "Tentacle Mode", options)
 	if(!select || !tentacle_owner)
 		return
-
 	// TFN Edit Start - Tentacle Behaviour Fix
 	if(!abyss_power)
 		return
 	abyss_power.aggro_mode = select
 	// TFN Edit End - Tentacle Behaviour Fix
-
 	current_mode = select
 
 	var/tentacles = 0
-	for(var/mob/living/basic/abyss_tentacle/T in abyss_power.active_tentacles)
+	for(var/mob/living/basic/abyss_tentacle/T in abyss_power?.active_tentacles)
 		if(T && !QDELETED(T))
 			var/was_passive = (T.aggro_mode == "Passive")
 			T.aggro_mode = select
