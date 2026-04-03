@@ -16,7 +16,7 @@
 	density = TRUE
 	anchored = TRUE
 
-	pass_flags_self = PASSDOORS // TFN Edit - Obtenebration 5 Trait Fix
+	pass_flags_self = PASSDOORS // TFN Edit - Obtenebration 5 Fix
 
 	icon = 'icons/obj/fence.dmi'
 	icon_state = "straight"
