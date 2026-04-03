@@ -112,6 +112,7 @@
 	cooldown_length = 1 TURNS
 
 	var/list/active_tentacles = list()
+	var/aggro_mode = "Aggressive" // TFN edit - Tentacle Behaviour Fix
 
 /datum/discipline_power/obtenebration/arms_of_the_abyss/activate(atom/target)
 	. = ..()
@@ -130,7 +131,7 @@
 		var/has_action = !!(locate(/datum/action/aggro_mode) in owner.actions)
 
 		if(!has_action)
-			var/datum/action/aggro_mode/A = new()
+			var/datum/action/aggro_mode/A = new(src)
 			A.Grant(owner)
 
 		// Create tentacles based on successes
@@ -148,8 +149,9 @@
 				if(open_turfs.len)
 					new_tentacle = new /mob/living/basic/abyss_tentacle(pick(open_turfs), owner)
 
-			// if we ended up making a new tentacle add it to our list
+			// if we ended up making a new tentacle add it to our list and inherit set aggro_mode
 			if(new_tentacle)
+				new_tentacle.aggro_mode = aggro_mode // TFN edit - Tentacle Behaviour Fix
 				active_tentacles += new_tentacle
 	else
 		to_chat(usr, span_warning("The area is too bright for the shadows to manifest!"))
@@ -311,6 +313,14 @@
 	button_icon = 'icons/hud/screen_glass.dmi'
 	button_icon_state = "harm"
 	var/current_mode = "Aggressive"
+// TFN Edit Start - Tentacle Behaviour Fix
+	var/datum/discipline_power/obtenebration/arms_of_the_abyss/abyss_power
+
+/datum/action/aggro_mode/New(Target)
+	. = ..()
+	abyss_power = Target
+	current_mode = abyss_power.aggro_mode
+// TFN Edit End - Tentacle Behaviour Fix
 
 /datum/action/aggro_mode/Trigger(trigger_flags)
 	. = ..()
@@ -334,16 +344,15 @@
 	var/select = tgui_input_list(tentacle_owner, "Select tentacle behaviour", "Tentacle Mode", options)
 	if(!select || !tentacle_owner)
 		return
-
+	// TFN Edit Start - Tentacle Behaviour Fix
+	if(!abyss_power)
+		return
+	abyss_power.aggro_mode = select
+	// TFN Edit End - Tentacle Behaviour Fix
 	current_mode = select
-	tentacle_owner.tentacle_aggro_mode = select
-
-	// need to access the discipline_power so we can grab the list
-	var/datum/splat/vampire/vampire = get_splat_with_discipline(tentacle_owner)
-	var/datum/discipline_power/obtenebration/arms_of_the_abyss/abyss_power = vampire?.get_discipline_power(/datum/discipline_power/obtenebration/arms_of_the_abyss)
 
 	var/tentacles = 0
-	for(var/mob/living/basic/abyss_tentacle/T in abyss_power?.active_tentacles)
+	for(var/mob/living/basic/abyss_tentacle/T in abyss_power.active_tentacles)
 		if(T && !QDELETED(T))
 			var/was_passive = (T.aggro_mode == "Passive")
 			T.aggro_mode = select
